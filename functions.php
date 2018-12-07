@@ -109,6 +109,10 @@ class Nav_Footer_Walker extends Walker_Nav_Menu
 		$class_names = $class_names ? ' class="' . esc_attr($class_names) . '"' : '';
 		$id = apply_filters('nav_menu_item_id', 'menu-item-' . $item->ID, $item, $args);
 		$id = $id ? ' id="' . esc_attr($id) . '"' : '';
+
+		$is_current_item = array_search('current-menu-item', $item->classes) != 0 ? ' active' : '';
+
+
 		$output .= $indent . '';
 		$attributes = !empty($item->attr_title) ? ' title="' . esc_attr($item->attr_title) . '"' : '';
 		$attributes .= !empty($item->target) ? ' target="' . esc_attr($item->target) . '"' : '';
@@ -134,13 +138,13 @@ class Nav_Footer_Walker extends Walker_Nav_Menu
 				/*var_dump('<pre>');
 				var_dump($args);
 				var_dump('</pre>');*/
-			$item_output .= '<div class="navbar-item has-dropdown is-hoverable"><a' . $attributes . ' class="navbar-link">';
+			$item_output .= '<div class="navbar-item has-dropdown is-hoverable"><a' . $attributes . ' class="navbar-link '.$is_current_item.'">';
 			$item_output .= $args->link_before . $title . $args->link_after;
 			$item_output .= '</a><div class="navbar-dropdown is-boxed">';
 			$item_output .= $args->after;
 		} else {
 			$item_output = $args->before;
-			$item_output .= '<a' . $attributes . ' class="navbar-item">';
+			$item_output .= '<a' . $attributes . ' class="navbar-item '.$is_current_item.'" >';
 			$item_output .= $args->link_before . $title . $args->link_after;
 			$item_output .= '</a>';
 			$item_output .= $args->after;
