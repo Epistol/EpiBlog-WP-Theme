@@ -9,8 +9,9 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <div class="header_article">
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
+	<?php epiblog_post_sticky_thumbnail(); ?>
+    <div class="header_article sticky">
         <header class="entry-header">
 			<?php
 			if(is_singular()) :
@@ -21,7 +22,6 @@
 
 			 ?>
         </header><!-- .entry-header -->
-		<?php epiblog_post_thumbnail(); ?>
     </div>
     <div class="reste-article">
         <div class="entry-content">

@@ -113,6 +113,40 @@ if(!function_exists('epiblog_entry_footer')) :
 		);
 	}
 endif;
+if(!function_exists('epiblog_category')) :
+	/**
+	 * Prints HTML with meta information for the categories, tags and comments.
+	 */
+	function epiblog_category()
+	{
+		// Hide category and tag text for pages.
+		if('post' === get_post_type()) {
+			/* translators: used between list items, there is a space after the comma */
+			$categories_list = "<a href='".get_site_url()."'>Accueil</a> / " .get_the_category_list(esc_html__('/ ', 'epiblog'));
+			if($categories_list) {
+				/* translators: 1: list of categories. */
+				printf('<div class="cat-links">' . esc_html__('%1$s', 'epiblog') . '</div>', $categories_list); // WPCS: XSS OK.
+			}
+		}
+
+	}
+endif;
+if(!function_exists('epiblog_ariane')) :
+	/**
+	 * Prints HTML with meta information for the categories, tags and comments.
+	 */
+	function epiblog_ariane()
+	{
+		// Hide category and tag text for pages.
+		if('post' === get_post_type()) {
+			/* translators: used between list items, there is a space after the comma */
+			if(function_exists('yoast_breadcrumb')) {
+				yoast_breadcrumb('<p id="breadcrumbs">', '</p>');
+			}
+
+		}
+	}
+endif;
 
 if(!function_exists('epiblog_post_thumbnail')) :
 	/**
@@ -130,22 +164,59 @@ if(!function_exists('epiblog_post_thumbnail')) :
 		if(is_singular()) :
 			?>
 
-            <div class="post-thumbnail">
-				<?php the_post_thumbnail(); ?>
-            </div><!-- .post-thumbnail -->
+			<?php
+			$thumb = get_the_post_thumbnail_url(); ?>
+            <div class="image-class" style="background-image: url('<?php echo $thumb; ?>')"></div>
 
 		<?php else : ?>
 
-				<?php
-				$thumb = get_the_post_thumbnail_url(); ?>
-                <div class="image-class" style="background-image: url('<?php echo $thumb; ?>')"></div>
-				<?php
-/*				the_post_thumbnail('post-thumbnail', array(
-					'alt' => the_title_attribute(array(
-						'echo' => false,
-					)),
-				));
-				*/?>
+			<?php
+			$thumb = get_the_post_thumbnail_url(); ?>
+            <div class="image-class" style="background-image: url('<?php echo $thumb; ?>')"></div>
+			<?php
+			/*				the_post_thumbnail('post-thumbnail', array(
+								'alt' => the_title_attribute(array(
+									'echo' => false,
+								)),
+							));
+							*/ ?>
+
+		<?php
+		endif; // End is_singular().
+	}
+endif;
+if(!function_exists('epiblog_post_sticky_thumbnail')) :
+	/**
+	 * Displays an optional post thumbnail.
+	 *
+	 * Wraps the post thumbnail in an anchor element on index views, or a div
+	 * element when on single views.
+	 */
+	function epiblog_post_sticky_thumbnail()
+	{
+		if(post_password_required() || is_attachment() || !has_post_thumbnail()) {
+			return;
+		}
+
+		if(is_singular()) :
+			?>
+
+			<?php
+			$thumb = get_the_post_thumbnail_url(); ?>
+            <div class="image-class mask" style="background-image: url('<?php echo $thumb; ?>')"></div>
+
+		<?php else : ?>
+
+			<?php
+			$thumb = get_the_post_thumbnail_url(); ?>
+            <div class="image-class mask" style="background-image: url('<?php echo $thumb; ?>')"></div>
+			<?php
+			/*				the_post_thumbnail('post-thumbnail', array(
+								'alt' => the_title_attribute(array(
+									'echo' => false,
+								)),
+							));
+							*/ ?>
 
 		<?php
 		endif; // End is_singular().

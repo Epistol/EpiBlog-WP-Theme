@@ -33,4 +33,15 @@ figure {
 	margin-top: 3%;
 }
 
+.mask {
+	-webkit-mask-image: url(../img/mask.svg);
+	mask-image: url(../img/mask.svg);
+	mask-repeat: no-repeat;
+	-webkit-mask-repeat: no-repeat;
+}
+
+.clip-animation {
+	animation: clip 1s infinite
+}
+
 @import "tables";

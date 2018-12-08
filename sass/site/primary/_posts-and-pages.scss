@@ -59,5 +59,15 @@ article {
 	background-repeat: no-repeat;
 }
 
+footer.entry-footer {
+	background: #F2F2F2;
+	padding: 1rem;
+	margin-left: 5%;
+}
+
+// CATEG LINKS
+.cat-links, .cat-links>a {
+	color: $main_color;
+}
 
 
