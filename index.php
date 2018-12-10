@@ -16,9 +16,8 @@ get_header();
 ?>
 
 <?php
-if ( have_posts() ) :
-
-	if ( is_home() && ! is_front_page() ) :
+if(have_posts()) :
+	if(is_home() && !is_front_page()) :
 		?>
         <header>
             <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
@@ -27,85 +26,57 @@ if ( have_posts() ) :
 	endif;
 
 	/* Start the Loop */
-	while ( have_posts() ) :
+	while(have_posts()) :
 		the_post();
-
-		/*
-		 * Include the Post-Type-specific template for the content.
-		 * If you want to override this in a child theme, then include a file
-		 * called content-___.php (where ___ is the Post Ty pe name) and that will be used instead.
-		 */
-		if ( is_sticky() ) {
-			var_dump("Oui sticky !");
-			get_template_part( 'template-parts/sticky', get_post_type() );
+		if(is_sticky()) {
+			get_template_part('template-parts/sticky', get_post_type());
 		}
 
 	endwhile;
-
 	the_posts_navigation();
-
 else :
-
-	get_template_part( 'template-parts/content', 'none' );
-
+	get_template_part('template-parts/content', 'none');
 endif;
 ?>
-
     <div class="columns">
         <div class="column is-8 ">
             <div id="primary" class="content-area">
                 <main id="main" class="site-main">
 
-			        <?php
-			        if ( have_posts() ) :
+					<?php
+					if(have_posts()) :
+						if(is_home() && !is_front_page()) :
 
-				        if ( is_home() && ! is_front_page() ) :
-					        ?>
+							?>
                             <header>
                                 <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
                             </header>
-				        <?php
-				        endif;
+						<?php
+						endif;
 
-				        /* Start the Loop */
-				        while ( have_posts() ) :
-					        the_post();
+						/* Start the Loop */
+						while(have_posts()) :
+							the_post();
 
-					        /*
-							 * Include the Post-Type-specific template for the content.
-							 * If you want to override this in a child theme, then include a file
-							 * called content-___.php (where ___ is the Post Ty pe name) and that will be used instead.
-							 */
-					        if ( !is_sticky() ) {
-						        get_template_part( 'template-parts/content', get_post_type() );
+							if(!is_sticky()) {
+								get_template_part('template-parts/content', get_post_type());
 
-					        }
-					        /*else {
-						        var_dump("Oui sticky !");
-						        get_template_part( 'template-parts/sticky', get_post_type() );
-
-					        }*/
-
-				        endwhile;
-
-				        the_posts_navigation();
-
-			        else :
-
-				        get_template_part( 'template-parts/content', 'none' );
-
-			        endif;
-			        ?>
+							}
+						endwhile;
+						the_posts_navigation();
+					else :
+						get_template_part('template-parts/content', 'none');
+					endif;
+					?>
 
                 </main><!-- #main -->
             </div><!-- #primary -->
         </div>
         <div class="column">
-            <?php get_sidebar();
-?>
+			<?php get_sidebar();
+			?>
         </div>
     </div>
-
 
 <?php
 get_footer();

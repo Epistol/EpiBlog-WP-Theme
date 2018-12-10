@@ -203,13 +203,13 @@ if(!function_exists('epiblog_post_sticky_thumbnail')) :
 
 			<?php
 			$thumb = get_the_post_thumbnail_url(); ?>
-            <div class="image-class mask" style="background-image: url('<?php echo $thumb; ?>')"></div>
+            <div class="image-class mask sticky" style="background-image: url('<?php echo $thumb; ?>')"></div>
 
 		<?php else : ?>
 
 			<?php
 			$thumb = get_the_post_thumbnail_url(); ?>
-            <div class="image-class mask" style="background-image: url('<?php echo $thumb; ?>')"></div>
+            <div class="image-class mask sticky" style="background-image: url('<?php echo $thumb; ?>')"></div>
 			<?php
 			/*				the_post_thumbnail('post-thumbnail', array(
 								'alt' => the_title_attribute(array(

@@ -406,6 +406,16 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem; }
 
+h2.widget-title {
+  font-weight: 900;
+  display: table;
+  font-size: 20px;
+  text-align: left;
+  color: #707070;
+  -webkit-box-shadow: 0 2px 0 0 #ff7254;
+  box-shadow: 0 2px 0 0 #ff7254;
+  margin-bottom: 1rem; }
+
 p {
   margin-bottom: 1.5em; }
 
@@ -690,6 +700,10 @@ a.navbar-link {
     -webkit-box-shadow: inset 0 -6px 0px 0px #FF7254;
     box-shadow: inset 0 -6px 0px 0px #FF7254; }
 
+.widget {
+  border-bottom: 1px solid #C8C8C8;
+  padding-bottom: 1rem; }
+
 p.site-description {
   display: none; }
 
@@ -785,8 +799,21 @@ p.site-description {
 --------------------------------------------------------------*/
 footer#colophon {
   background: #FF7254;
+  position: absolute;
+  margin-top: -1rem;
   color: white;
-  padding: 1rem; }
+  padding: 1rem;
+  z-index: 0;
+  min-height: 20vh;
+  width: 100%;
+  /* &:before {
+     content : "";
+     background: url("./img/masque_footer.svg") repeat-x;
+     width:100%;
+     height:100%;
+     bottom: 10%;
+     z-index: 0;
+   }*/ }
 
 .widget {
   margin: 0 0 1.5em;
@@ -833,11 +860,14 @@ article {
   margin-left: 7% !important; }
 
 .header_article {
-  border-radius: 50px 0px 0px 50px;
+  border-radius: 50px 20px 0px 50px;
   background: #f2f2f2;
   padding-left: 5%;
   padding-top: 1%;
   padding-bottom: 0%; }
+  .header_article.sticky {
+    background: transparent;
+    padding-left: 15%; }
 
 .reste-article {
   margin-left: 5%;
@@ -846,6 +876,10 @@ article {
   border-right: 4px solid #f2f2f2;
   background: white;
   padding: 1rem; }
+  .reste-article.sticky {
+    margin-left: 15%;
+    padding: 0rem;
+    border: 0px solid; }
 
 .image-class {
   display: block;
@@ -855,11 +889,26 @@ article {
   height: 17rem;
   background-size: cover;
   background-repeat: no-repeat; }
+  .image-class.sticky {
+    position: absolute; }
+
+.content_article.sticky {
+  margin-left: 10%;
+  background: white;
+  border-radius: 50px;
+  border: 3px solid #f2f2f2; }
 
 footer.entry-footer {
   background: #F2F2F2;
   padding: 1rem;
   margin-left: 5%; }
+  footer.entry-footer.sticky {
+    margin-left: 0px;
+    -webkit-border-radius: 0 0 40px 40px;
+    border-radius: 0 0 40px 40px; }
+
+article.sticky {
+  margin-bottom: 4.5%; }
 
 .cat-links, .cat-links > a {
   color: #ff7254; }
