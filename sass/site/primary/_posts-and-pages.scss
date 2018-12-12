@@ -28,14 +28,13 @@ article {
 
   /* margin-top: 3rem; */
   margin-bottom: 3rem;
-  margin-left: 7% !important;
   //padding-left: 7%;
 }
 
 .header_article {
   border-radius: 50px 20px 0px 50px;
   background: #f2f2f2;
-  padding-left: 5%;
+  padding-left: 7%;
   padding-top: 1%;
   padding-bottom: 0%;
 
@@ -47,13 +46,13 @@ article {
 }
 
 .reste-article {
-  margin-left: 5%;
+  margin-left: 7%;
   border-left: 4px solid #f2f2f2;
   border-bottom: 4px solid #f2f2f2;
   border-right: 4px solid #f2f2f2;
   background: white;
   padding: 1rem;
-
+  margin-top: 0%;
   &.sticky {
     margin-left: 15%;
     padding: 0rem;
@@ -87,8 +86,9 @@ article {
 footer.entry-footer {
   background: #F2F2F2;
   padding: 1rem;
-  margin-left: 5%;
-
+  margin-left: 7%;
+  -webkit-border-radius: 0 0 25px 25px;
+  border-radius: 0 0 25px 25px;
   &.sticky {
     margin-left: 0px;
     -webkit-border-radius: 0 0 40px 40px;

@@ -4,3 +4,25 @@
 .bypostauthor {
 	display: block;
 }
+
+span.comments-link > a {
+  color: #ff7254;
+
+}
+
+span.comments-link{
+  float: right;
+  background: #fafafa;
+  padding: 0.5rem 1rem;
+  -webkit-border-radius: 15px 15px 0 0;
+  border-radius: 15px 15px 0 0;
+  font-style: italic;
+  margin-top: -1rem;
+  color: #ff7254;
+  &:before {
+	content : "\f086";
+	font-family: "Font Awesome 5 Free"; font-weight: 900;
+  	margin-right:0.5rem;
+	color: #ff7254;
+  }
+}

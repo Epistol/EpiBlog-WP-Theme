@@ -85,6 +85,7 @@ endif;
 add_action('after_setup_theme', 'epiblog_setup');
 
 
+
 class Nav_Footer_Walker extends Walker_Nav_Menu
 {
 	function start_lvl(&$output, $depth = 0, $args = array())

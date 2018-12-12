@@ -1,6 +1,7 @@
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	font-family: $typoheader;
+	margin-bottom: 1rem;
 }
 
 .entry-title, .entry-title > a {
@@ -12,7 +13,15 @@ h1, h2, h3, h4, h5, h6 {
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 }
-
+section.widget:hover > h2.widget-title {
+  background : #ff7254;
+  color:white;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 h2.widget-title {
 	font-weight: 900;
 	display: table;
@@ -22,4 +31,18 @@ h2.widget-title {
 	-webkit-box-shadow: 0 2px 0 0 #ff7254;
 	box-shadow: 0 2px 0 0 #ff7254;
 	margin-bottom: 1rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background : #ff7254;
+    color:white;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
 }

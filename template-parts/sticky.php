@@ -31,7 +31,6 @@
 				    ?>
                     <div class="entry-meta">
 					    <?php
-					    epiblog_category();
 					    epiblog_posted_on();
 					    //		            epiblog_posted_by();
 					    ?>

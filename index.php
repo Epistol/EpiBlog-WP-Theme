@@ -55,13 +55,19 @@ endif;
 						endif;
 
 						/* Start the Loop */
+                    $count = 0;
 						while(have_posts()) :
 							the_post();
+						if($count == 3){
+							get_template_part('template-parts/newsletter', get_post_type());
+
+                        }
 
 							if(!is_sticky()) {
 								get_template_part('template-parts/content', get_post_type());
 
 							}
+							$count++;
 						endwhile;
 						the_posts_navigation();
 					else :

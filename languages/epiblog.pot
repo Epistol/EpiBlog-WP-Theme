@@ -93,7 +93,7 @@ msgstr ""
 #: inc/template-tags.php:72
 #. translators: %s: post title
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
-msgstr ""
+msgstr "Ajouter un commentaire <span class=\"screen-reader-text\"> on %s</span>"
 
 #: inc/template-tags.php:89 template-parts/content-page.php:35
 #. translators: %s: Name of current post. Only visible to screen readers

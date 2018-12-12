@@ -1,13 +1,59 @@
 // @import "../layout/content-sidebar";
 // @import "../layout/sidebar-content";
- @import "../layout/_header";
-
+@import "../layout/_header";
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
 @import "primary/posts-and-pages";
-
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
 @import "primary/comments";
+
+.rezos {
+  position: absolute;
+  left: 1.3%;
+  width: 3pc;
+  margin-top: 18%;
+}
+
+.icon {
+  color: white;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  height: 2rem;
+  width: 2rem;
+  margin-bottom: 25%!important;
+  
+  
+  
+  &.fb {
+	background: #3b5999;
+  }
+  
+  &.twitter {
+	background: #55acee;
+  }
+  
+  &.linkedin {
+	background: #0077B5;
+  }
+  
+  &.slack {
+	background: #3aaf85;
+  }
+}
+
+.comments {
+  margin-left: 14%;
+  background: white;
+  padding: 1%;
+  border: 0.3rem solid #f2f2f2;
+}
+
+nav.navigation.post-navigation {
+  margin-left: 15%;
+  background: #f2f2f2;
+  padding: 1rem;
+  margin-right: 1%;
+}
