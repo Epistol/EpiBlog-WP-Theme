@@ -1,0 +1,8 @@
+input.searchNav {
+  border-radius: 25px;
+  //padding: .5rem;
+  &::placeholder{
+    padding-left: 2rem;
+    color:#dbdbdb;
+  }
+}

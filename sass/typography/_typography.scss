@@ -4,6 +4,7 @@ input,
 select,
 optgroup,
 textarea {
+
 	color: $color__text-main;
 	font-family: $typocontent;
 	@include font-size(1);
@@ -13,52 +14,52 @@ textarea {
 
 @font-face {
 	font-family: 'AvenirBlack';
-	src: url('../fonts/avenir-black-webfont.ttf') format('truetype');
+	src: url('./fonts/avenir-black-webfont.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'AvenirMedium';
-	src: url('../fonts/avenir-medium-webfont.ttf') format('truetype');
+	src: url('./fonts/avenir-medium-webfont.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'AvenirBook';
-	src: url('../fonts/avenir-book-webfont.ttf') format('truetype');
+	src: url('./fonts/avenir-book-webfont.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'AvenirHeavy';
-	src: url('../fonts/avenir-heavy-webfont.ttf') format('truetype');
+	src: url('./fonts/avenir-heavy-webfont.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'AvenirRoman';
-	src: url('../fonts/avenir-roman-webfont.ttf') format('truetype');
+	src: url('./fonts/avenir-roman-webfont.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Conviction";
-	src: url("../fonts/Conviction.ttf") format("truetype");
+	src: url("./fonts/Conviction.ttf") format("truetype");
 }
 
 @font-face {
 	font-family: "Futura";
-	src: url("../fonts/futura/futur.ttf") format("truetype");
+	src: url("./fonts/futura/futur.ttf") format("truetype");
 }
 //404 page
 @font-face {
 	font-family: "EurostileBQ";
-	src: url("../fonts/EurostileBQ-BoldExtended.otf") format("opentype");
+	src: url("./fonts/EurostileBQ-BoldExtended.otf") format("opentype");
 }
 
 

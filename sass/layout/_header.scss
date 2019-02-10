@@ -1,7 +1,15 @@
 .navbar {
-  background-color: transparent;
+  background-color: #fafafa;
   min-height: 3.25rem;
+  max-height:83px;
   position: relative;
   z-index: 30;
 }
 
+.is-flexed-left {
+  display:flex;align-items:center;
+}
+
+.is-flexed-bot-right {
+  display:flex;justify-content:flex-end;align-items:flex-end;
+}

@@ -1,0 +1,88 @@
+#index-menu-icons {
+  background: #fff;
+  -webkit-box-shadow: 0 0 2px 2px #F2F2F2;
+  box-shadow: 0 0 2px 2px #F2F2F2;
+  margin: 4rem 0rem 6rem 0rem;
+  color: $main_color;
+  z-index: 9;
+  padding:0px;
+}
+
+.flex-center {
+  display:flex;justify-content:center;align-items:center;
+}
+
+.marginless {
+  margin: 0px;
+}
+
+.navbar-burger {
+  height: inherit;
+}
+
+.column {
+  &#laravel {
+    @include small-transition;
+    &:hover {
+      background:#f55247;
+      & a {
+        color:white!important;
+      }
+      & .brand-name {
+        font-weight: bold;
+      }
+    }
+  }
+  &#vuejs {
+    @include small-transition;
+    &:hover {
+      background:#42b883;
+      & a {
+        color:#35495e!important;
+      }
+      & .brand-name {
+        font-weight: bold;
+      }
+    }
+  }
+  &#wp {
+    @include small-transition;
+
+    &:hover {
+      background:#21759b;
+      & a {
+        color:#d54e21!important;
+      }
+      & .brand-name {
+        font-weight: bold;
+      }
+    }
+  }
+  &#code {
+    @include small-transition;
+
+    &:hover {
+      background:#333;
+      & a {
+        color:#6cc644!important;
+      }
+      & .brand-name {
+        font-weight: bold;
+      }
+    }
+  }
+  &#art {
+    @include small-transition;
+
+    &:hover {
+      background:#444444;
+      & a {
+        color:#ea4c89!important;
+      }
+      & .brand-name {
+        font-weight: bold;
+      }
+    }
+  }
+}
+

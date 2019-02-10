@@ -19,6 +19,10 @@ span.comments-link{
   font-style: italic;
   margin-top: -1rem;
   color: #ff7254;
+  @media screen and (max-width:425px) {
+    display: none;
+  }
+  
   &:before {
 	content : "\f086";
 	font-family: "Font Awesome 5 Free"; font-weight: 900;

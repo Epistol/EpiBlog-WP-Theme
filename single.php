@@ -9,8 +9,8 @@
 
 get_header();
 ?>
-    <div class="columns">
-    <div class="column is-8 ">
+    <div class="columns" style="margin-left: 10%;margin-right: 10%;">
+    <div class="column is-9 ">
     <div id="primary" class="content-area">
     <main id="main" class="site-main">
 		<?php

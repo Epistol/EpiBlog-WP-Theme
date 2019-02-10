@@ -31,12 +31,12 @@ figure {
 }
 
 .site-content {
-  margin-top: 3%;
+  //margin-top: 3%;
 }
 
 .mask {
-  -webkit-mask-image: url(../img/mask.svg);
-  mask-image: url(../img/mask.svg);
+  -webkit-mask-image: url(./img/mask.svg);
+  mask-image: url(./img/mask.svg);
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
 }
@@ -68,7 +68,7 @@ p {
 }
 
 .posted-on {
-  /* margin: 1rem 0rem; */
+  margin: 0rem 1rem ;
   /* float: right; */
   display: flex;
   justify-content: flex-end;
@@ -84,9 +84,6 @@ p {
     margin: 1%;
     color:#575757;
     font-size:1rem;
-    &:before {
-      content  :"#";
-    }
     &:visited {
       color: #242424;
     }
@@ -102,3 +99,8 @@ figcaption {
   font-style: italic;
   font-size:0.8rem;
 }
+ul#primary-menu {
+  margin: 0px;
+}
+
+

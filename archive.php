@@ -10,7 +10,9 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
+    <div class="columns">
+    <div class="column is-6 is-offset-2 ">
+    <div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
 		<?php if ( have_posts() ) : ?>
@@ -46,6 +48,11 @@ get_header();
 		?>
 
 		</main><!-- #main -->
+	</div><!-- #primary -->
+	</div>
+        <div class="column is-2">
+            <?php get_sidebar();?>
+        </div>
 	</div><!-- #primary -->
 
 <?php

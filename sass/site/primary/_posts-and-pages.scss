@@ -14,7 +14,7 @@
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0;
+  margin: 1.2em 0 0;
 }
 
 .page-links {
@@ -41,10 +41,20 @@ article {
   &.sticky {
     background: transparent;
     padding-left: 15%;
-
   }
+
+  @media screen and (max-width:425px) {
+    border-radius: 50px 20px 0px 0px;
+    padding-left: 0%;
+  }
+
 }
 
+header.entry-header {
+  @media screen and (max-width:425px) {
+    padding-left: 7%;
+  }
+}
 .reste-article {
   margin-left: 7%;
   border-left: 4px solid #f2f2f2;
@@ -53,42 +63,88 @@ article {
   background: white;
   padding: 1rem;
   margin-top: 0%;
+  overflow-wrap: break-word;
+
   &.sticky {
     margin-left: 15%;
     padding: 0rem;
     border: 0px solid;
   }
+
+  @media screen and (max-width:425px) {
+    margin-left: 0px;
+    padding: 0.5rem;
+  }
+
+
 }
 
 .image-class {
-  display: block;
-  max-width: 100%;
-  max-height: 17rem;
-  width: 100%;
-  height: 17rem;
+  display: flex;
+  min-width: 250px;
+  min-height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
 
-  &.sticky {
+  &.sticky-article {
     position: absolute;
+    @media screen and (min-width: 1025px) and (max-width: 1440px) {
+      left: 10%;
+    }
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      left: 6%;
+    }
+    @media screen and (max-width: 768px) {
+      position: relative;
+      -webkit-mask-image: none;
+    }
   }
 }
+
+.edit-link {
+  position: absolute;
+}
+
 
 .content_article {
   &.sticky {
     margin-left: 10%;
+    @media screen and (max-width: 425px) {
+      margin-left: 0%;
+    }
     background: white;
     border-radius: 50px;
     border: 3px solid #f2f2f2;
   }
 }
 
+.wp-block-image {
+  max-width: 80%;
+  margin-bottom: 1em;
+  margin-left: 10%;
+  margin-right: 0;
+
+  & img {
+    box-shadow: 0 0 18px 0 rgba(0, 0, 0, .4);
+  }
+}
+
 footer.entry-footer {
   background: #F2F2F2;
-  padding: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   margin-left: 7%;
   -webkit-border-radius: 0 0 25px 25px;
   border-radius: 0 0 25px 25px;
+
+  @media screen and (max-width: 425px) {
+    padding: 0px !important;
+    margin-left: 0%;
+
+  }
+
+
   &.sticky {
     margin-left: 0px;
     -webkit-border-radius: 0 0 40px 40px;
@@ -97,7 +153,7 @@ footer.entry-footer {
 }
 
 article.sticky {
-  margin-bottom: 4.5%;
+  //margin-bottom: 4.5%;
 }
 
 // CATEG LINKS

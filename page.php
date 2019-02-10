@@ -15,7 +15,7 @@
 get_header();
 ?>
     <div class="columns">
-    <div class="column is-8 ">
+    <div class="column is-6 is-offset-2">
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
 

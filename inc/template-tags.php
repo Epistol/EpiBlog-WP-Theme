@@ -31,7 +31,7 @@ if(!function_exists('epiblog_posted_on')) :
 			'<a href="' . esc_url(get_permalink()) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
-		echo '<div class="posted-on column"><p>Posté le ' . $posted_on . '</p></div>'; // WPCS: XSS OK.
+		echo '<div class="posted-on"><span>Posté le ' . $posted_on . '</span></div>'; // WPCS: XSS OK.
 
 	}
 endif;
@@ -61,23 +61,27 @@ if(!function_exists('epiblog_entry_footer')) :
 	{
 		// Hide category and tag text for pages.
 		if('post' === get_post_type()) {
-			/* translators: used between list items, there is a space after the comma */
+
+            /* translators: used between list items, there is a space after the comma */
 			$categories_list = get_the_category_list(esc_html__('> ', 'epiblog'));
-//			if($categories_list) {
-//				/* translators: 1: list of categories. */
-//				printf('<div class="cat-footer-links">' . esc_html__('%1$s', 'epiblog') . '</div>', $categories_list); // WPCS: XSS OK.
-//			}
+			if($categories_list) {
+                echo('<div class="column is-flexed-left">');
+                /* translators: 1: list of categories. */
+				printf('<div class="cat-footer-links">' . esc_html__('%1$s', 'epiblog') . '</div>', $categories_list); // WPCS: XSS OK.
+                epiblog_posted_on();
+                get_template_part('template-parts/social', get_post_type());
 
-			/* translators: used between list items, there is a space after the comma */
-			$tags_list = get_the_tag_list('', esc_html_x('', 'list item separator', 'epiblog'));
-			if($tags_list) {
-				/* translators: 1: list of tags. */
-				printf('<div class="tags-links"><span class="tag_header"> TAGS :</span> ' . esc_html__(' %1$s', 'epiblog') . '</div>', $tags_list); // WPCS: XSS OK.
-			}
-		}
+                printf('</div>');
 
-		if(!is_single() && !post_password_required() && (comments_open() || get_comments_number())) {
-			echo '<span class="comments-link">';
+            }
+            printf('</div">');
+        }
+
+
+        if(!is_single() && !post_password_required() && (comments_open() || get_comments_number())) {
+            printf('<div class="column is-paddingless is-marginless is-flexed-bot-right">');
+
+            echo '<span class="comments-link">';
 			comments_popup_link(
 				sprintf(
 					wp_kses(
@@ -92,27 +96,13 @@ if(!function_exists('epiblog_entry_footer')) :
 					get_the_title()
 				)
 			);
-			echo '</span>';
-		}
+			echo '</span></div>';
 
-		edit_post_link(
-			sprintf(
-				wp_kses(
-				/* translators: %s: Name of current post. Only visible to screen readers */
-					__('Edit <span class="screen-reader-text">%s</span>', 'epiblog'),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				get_the_title()
-			),
-			'<div class="edit-link">',
-			'</div>'
-		);
+		}
 	}
 endif;
+
+
 if(!function_exists('epiblog_category')) :
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.
@@ -197,26 +187,14 @@ if(!function_exists('epiblog_post_sticky_thumbnail')) :
 		if(post_password_required() || is_attachment() || !has_post_thumbnail()) {
 			return;
 		}
-
+       $thumb = get_the_post_thumbnail_url();
 		if(is_singular()) :
 			?>
-
-			<?php
-			$thumb = get_the_post_thumbnail_url(); ?>
-            <a href="<?= esc_url(get_permalink()); ?>"><div class="image-class mask sticky" style="background-image: url('<?php echo $thumb; ?>')"></div></a>
+            <a href="<?= esc_url(get_permalink()); ?>"><div class="image-class mask sticky-article" style="background-image: url('<?php echo $thumb; ?>')"></div></a>
 
 		<?php else : ?>
 
-			<?php
-			$thumb = get_the_post_thumbnail_url(); ?>
-            <a href="<?= esc_url(get_permalink()); ?>"><div class="image-class mask sticky" style="background-image: url('<?php echo $thumb; ?>')"></div></a>
-			<?php
-			/*				the_post_thumbnail('post-thumbnail', array(
-								'alt' => the_title_attribute(array(
-									'echo' => false,
-								)),
-							));
-							*/ ?>
+            <a href="<?= esc_url(get_permalink()); ?>"><div class="image-class mask sticky-article" style="background-image: url('<?php echo $thumb; ?>')"></div></a>
 
 		<?php
 		endif; // End is_singular().

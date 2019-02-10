@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "stickybits": "^3.6.1"
+  },
+  "dependencies": {
+    "waypoints": "^4.0.1"
+  }
+}

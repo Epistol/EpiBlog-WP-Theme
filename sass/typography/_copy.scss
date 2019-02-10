@@ -10,6 +10,12 @@ blockquote {
 	margin: 2rem;
 	padding: 1rem;
 	background: #fafafa;
+
+	@media screen and (max-width:425px) {
+		margin: 0.5rem;
+	}
+
+
 	&:after {
 		content : '\f10e';
 		font-family: "Font Awesome 5 Free"; font-weight: 900;
@@ -18,10 +24,13 @@ blockquote {
 		font-variant: normal;
 		text-rendering: auto;
 		-webkit-font-smoothing: antialiased;
-		position: absolute;
-		right: 37%;
-		font-size: 3rem;
+		float: right;
+		font-size: 2rem;
 		color: rgba(50, 55, 60, 0.5);
+		@media screen and (max-width:425px) {
+			font-size: 1rem;
+
+		}
 	}
 }
 

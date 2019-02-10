@@ -27,17 +27,6 @@
         <div class="reste-article sticky">
             <div class="entry-content">
 			    <?php
-			    if('post' === get_post_type()) :
-				    ?>
-                    <div class="entry-meta">
-					    <?php
-					    epiblog_posted_on();
-					    //		            epiblog_posted_by();
-					    ?>
-                    </div><!-- .entry-meta -->
-			    <?php endif;
-			    ?>
-			    <?php
 			    the_content(sprintf(
 				    wp_kses(
 				    /* translators: %s: Name of current post. Only visible to screen readers */
@@ -59,9 +48,17 @@
             </div><!-- .entry-content -->
         </div>
         <footer class="entry-footer sticky">
+            <div class="columns">
 
-		    <?php epiblog_entry_footer(); ?>
+            <?php
+//            var_dump(get_post_type());
+            if(get_post_type() === 'post'){
+                epiblog_entry_footer();
+            }
+            ?>
+            </div>
+
         </footer><!-- .entry-footer -->
     </div>
 
-</article><!-- #post-<?php the_ID(); ?> -->
+</article>
