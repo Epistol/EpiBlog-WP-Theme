@@ -1,0 +1,25 @@
+.image-class {
+  display: flex;
+  min-width: 250px;
+  min-height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &.sticky-article {
+    position: absolute;
+    margin-left: -10%;
+    @media screen and (min-width: 1025px) and (max-width: 1440px) {
+      left: 10%;
+      margin-left: 0px;
+    }
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      left: 6%;
+      margin-left: 0px;
+    }
+    @media screen and (max-width: 768px) {
+      position: relative;
+      -webkit-mask-image: none;
+    }
+  }
+}

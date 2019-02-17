@@ -79,7 +79,7 @@ p {
   & > a {
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    background: hsla(0, 0%, 90%, 1);
+    background: $color__background-body;
     padding:0.3rem;
     margin: 1%;
     color:#575757;

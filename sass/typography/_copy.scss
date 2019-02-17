@@ -9,8 +9,9 @@ dfn, cite, em, i {
 blockquote {
 	margin: 2rem;
 	padding: 1rem;
-	background: #fafafa;
-
+	background: $color__bg-grey;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
 	@media screen and (max-width:425px) {
 		margin: 0.5rem;
 	}
