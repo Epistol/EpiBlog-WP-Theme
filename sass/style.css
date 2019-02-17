@@ -1257,6 +1257,7 @@ footer#colophon a:hover {
 
 .sticky {
   display: block;
+  margin-top: 2rem;
 }
 
 .post,
