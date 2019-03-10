@@ -1493,6 +1493,61 @@ nav.navigation.post-navigation {
   margin-right: 1%;
 }
 
+a {
+  color: #ff6735;
+}
+
+.sticky-wrapper {
+  z-index: 999;
+}
+
+.shadowNav {
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(60, 60, 60, 0.1);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(60, 60, 60, 0.1);
+  -o-box-shadow: 0px 10px 20px 0px rgba(60, 60, 60, 0.1);
+  box-shadow: 0px 10px 20px 0px rgba(60, 60, 60, 0.1);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.site-info a {
+  color: white;
+}
+
+.grecaptcha-badge {
+  display: none;
+}
+
+.secondMenu {
+  position: fixed;
+  width: 100%;
+  margin: 0px !important;
+  max-width: none;
+  left: 0;
+  top: 84px;
+}
+@media screen and (max-width: 425px) {
+  .secondMenu {
+    position: relative;
+  }
+}
+.secondMenu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secondMenu .brand-name {
+  padding-left: 1rem;
+}
+
+.is-fixed {
+  position: fixed;
+  top: 0;
+}
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
@@ -1601,61 +1656,6 @@ object {
 figure.image.is-logo {
   max-height: 15rem;
   max-width: 10rem;
-}
-
-a {
-  color: #ff6735;
-}
-
-.sticky-wrapper {
-  z-index: 999;
-}
-
-.shadowNav {
-  -webkit-box-shadow: 0px 10px 20px 0px rgba(60, 60, 60, 0.1);
-  -moz-box-shadow: 0px 10px 20px 0px rgba(60, 60, 60, 0.1);
-  -o-box-shadow: 0px 10px 20px 0px rgba(60, 60, 60, 0.1);
-  box-shadow: 0px 10px 20px 0px rgba(60, 60, 60, 0.1);
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
-.site-info a {
-  color: white;
-}
-
-.grecaptcha-badge {
-  display: none;
-}
-
-.secondMenu {
-  position: fixed;
-  width: 100%;
-  margin: 0px !important;
-  max-width: none;
-  left: 0;
-  top: 84px;
-}
-@media screen and (max-width: 425px) {
-  .secondMenu {
-    position: relative;
-  }
-}
-.secondMenu a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.secondMenu .brand-name {
-  padding-left: 1rem;
-}
-
-.is-fixed {
-  position: fixed;
-  top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
