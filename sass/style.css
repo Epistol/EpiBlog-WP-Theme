@@ -1548,6 +1548,12 @@ a {
   top: 0;
 }
 
+.wp-block-embed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
