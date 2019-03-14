@@ -3,6 +3,8 @@
 [![buddy pipeline](https://app.buddy.works/mika63270/epiblog-wp-theme/pipelines/pipeline/173400/badge.svg?token=d02226089a67405b2a29f55e7e384aa69393f0f910a4d148a217b72c7272a564 "buddy pipeline")](https://app.buddy.works/mika63270/epiblog-wp-theme/pipelines/pipeline/173400)
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/Epistol/epistol)
 
+- [Become a backer or sponsor on Patreon](https://www.patreon.com/epistol).
+
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
