@@ -98,6 +98,8 @@
                                 </div>
                                 <div class="navbar-item  jetpack_widget_social_icons">
                                     <?php include('sociaux.php'); ?>
+                                    <span style="width:1rem"></span>
+                                    <a href="https://www.patreon.com/bePatron?u=3347388" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
                                 </div>
                             </div>
 
