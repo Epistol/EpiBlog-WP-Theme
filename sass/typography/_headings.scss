@@ -13,13 +13,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   @include font-size(2);
   text-align: left;
-  color: #ff7254;
+  color: $main_color;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
 section.widget:hover > h2.widget-title {
-  background: #ff7254;
+  background: $main_color;
   color: white;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -34,8 +34,8 @@ h2.widget-title {
   font-size: 20px;
   text-align: left;
   color: #707070;
-  -webkit-box-shadow: 0 2px 0 0 #ff7254;
-  box-shadow: 0 2px 0 0 #ff7254;
+  -webkit-box-shadow: 0 2px 0 0 $main_color;
+  box-shadow: 0 2px 0 0 $main_color;
   margin-bottom: 1rem;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -44,7 +44,7 @@ h2.widget-title {
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    background: #ff7254;
+    background: $main_color;
     color: white;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;

@@ -322,13 +322,13 @@ p.stars a:before {
   line-height: 1;
   font-family: "star";
   content: "S";
-  color: #404040;
+  color: #293241;
   text-indent: 0;
   opacity: 0.25;
 }
 p.stars a:hover ~ a:before {
   content: "S";
-  color: #404040;
+  color: #293241;
   opacity: 0.25;
 }
 p.stars:hover a:before {
@@ -343,7 +343,7 @@ p.stars.selected a.active:before {
 }
 p.stars.selected a.active ~ a:before {
   content: "S";
-  color: #404040;
+  color: #293241;
   opacity: 0.25;
 }
 p.stars.selected a:not(.active):before {

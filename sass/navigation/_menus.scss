@@ -100,7 +100,7 @@
     background: white;
     width: fit-content;
     padding: 5px 12px;
-    border: 1px solid #fc7153;
+    border: 1px solid $main_color;
     -webkit-border-radius: 10px;
     border-radius: 10px;
   }
@@ -129,17 +129,17 @@ a.navbar-item {
   font-family: $typoheader;
   @include font-size(1);
   text-align: left;
-  color: #293241;
+  color: $grey400;
 
   &.active {
-    -webkit-box-shadow: inset 0 -6px 0px 0px #FF7254;
-    box-shadow: inset 0 -6px 0px 0px #FF7254;
+    -webkit-box-shadow: inset 0px 6px 0px 0px $main_color;
+    box-shadow: inset 0px 6px 0px 0px $main_color;
     @include small-transition;
   }
 
   &:hover {
-    -webkit-box-shadow: inset 0 -6px 0px 0px #FF7254;
-    box-shadow: inset 0 -6px 0px 0px #FF7254;
+    -webkit-box-shadow: inset 0px 6px 0px 0px $main_color;
+    box-shadow: inset 0px 6px 0px 0px $main_color;
     @include small-transition;
   }
 
@@ -150,11 +150,10 @@ a.navbar-link {
   font-family: $typoheader;
   @include font-size(1);
   text-align: left;
-  color: #293241;
 
   &.active {
-    -webkit-box-shadow: inset 0 -6px 0px 0px #FF7254;
-    box-shadow: inset 0 -6px 0px 0px #FF7254;
+    -webkit-box-shadow: inset 0 -6px 0px 0px $main_color;
+    box-shadow: inset 0 -6px 0px 0px $main_color;
   }
 }
 

@@ -24,7 +24,7 @@
     <meta name="google-site-verification" content="upkTmLxNKht1MSf9tfx4QzbjSiZHGnDQF82i8DoWLdU"/>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39203770-7"></script>
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Nunito+Sans" rel="stylesheet">
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -48,64 +48,64 @@
             <?php //esc_html_e( 'Skip to content', 'epiblog' ); ?><!--</a>-->
             <header id="masthead" class="site-header">
                 <nav class="navbar" role="navigation" aria-label="main navigation">
-                        <div class="navbar-brand">
-                            <?php
-                            the_custom_logo();
-                            //				    if ( is_front_page() && is_home() ) :
-                            ?>
-                            <a href="<?php echo esc_url(home_url('/')); ?>" rel="home" id="<?php bloginfo('name'); ?>">
-                                <figure class="image is-logo">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/blog_design_logo.svg">
-                                </figure>
-                            </a>
+                    <div class="navbar-brand">
+                        <?php
+                        the_custom_logo();
+                        //				    if ( is_front_page() && is_home() ) :
+                        ?>
+                        <a href="<?php echo esc_url(home_url('/')); ?>" rel="home" id="<?php bloginfo('name'); ?>">
+                            <figure class="image is-logo">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/blog_design_logo.svg">
+                            </figure>
+                        </a>
 
-                            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-                               data-target="navbarBasicExample">
-                                <span aria-hidden="true"></span>
-                                <span aria-hidden="true"></span>
-                                <span aria-hidden="true"></span>
-                            </a>
+                        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                           data-target="navbarBasicExample">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div class="navbar-menu">
+                        <div class="navbar-start">
+                            <?php
+                            wp_nav_menu(array(
+                                'walker' => new Nav_Footer_Walker(),
+                                'depth' => 2,
+                                'container' => false,
+                                'menu_class' => 'navbar-menu',
+                                'menu_id' => 'primary-menu',
+                                'theme_location' => 'menu-1',
+                                'after' => "</div>",
+                            ));
+                            ?>
                         </div>
-                        <div class="navbar-menu">
-                            <div class="navbar-start">
-                                <?php
-                                wp_nav_menu(array(
-                                    'walker' => new Nav_Footer_Walker(),
-                                    'depth' => 2,
-                                    'container' => false,
-                                    'menu_class' => 'navbar-menu',
-                                    'menu_id' => 'primary-menu',
-                                    'theme_location' => 'menu-1',
-                                    'after' => "</div>",
-                                ));
-                                ?>
-                            </div>
-                            <div class="navbar-end">
-                                <div class="navbar-item">
-                                    <form role="search" method="get" id="searchform" action="<?= get_site_url() ?>">
-                                        <div class="field">
-                                            <p class="control has-icons-left"
-                                               style="margin-bottom: 0px; line-height: 2.3rem;">
-                                                <input type="text" class="input" value="" placeholder="Recherche"
-                                                       name="s"
-                                                       id="s"/>
-                                                <span class="icon is-small is-left">
+                        <div class="navbar-end">
+                            <div class="navbar-item">
+                                <form role="search" method="get" id="searchform" action="<?= get_site_url() ?>">
+                                    <div class="field">
+                                        <p class="control has-icons-left"
+                                           style="margin-bottom: 0px; line-height: 2.3rem;">
+                                            <input type="text" class="input" value="" placeholder="Recherche"
+                                                   name="s"
+                                                   id="s"/>
+                                            <span class="icon is-small is-left">
                                                      <i class="fas fa-search"></i>
                                                 </span>
-                                            </p>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="navbar-item  jetpack_widget_social_icons">
-                                    <?php include('sociaux.php'); ?>
-                                    <span style="width:1rem"></span>
-                                    <a href="https://www.patreon.com/bePatron?u=3347388"
-                                       data-patreon-widget-type="become-patron-button">Follow on Patron!</a>
-                                    <script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-                                </div>
+                                        </p>
+                                    </div>
+                                </form>
                             </div>
-
+                            <div class="navbar-item  jetpack_widget_social_icons">
+                                <?php include('sociaux.php'); ?>
+                                <span style="width:1rem"></span>
+                                <a href="https://www.patreon.com/bePatron?u=3347388"
+                                   data-patreon-widget-type="become-patron-button">Follow on Patron!</a>
+                                <script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+                            </div>
                         </div>
+
+                    </div>
                 </nav><!-- #site-navigation -->
             </header><!-- #masthead -->
         </div>

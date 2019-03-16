@@ -386,58 +386,16 @@ input,
 select,
 optgroup,
 textarea {
-  color: #404040;
-  font-family: "Nunito Sans", Helvetica, sans-serif;
+  color: #293241;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
 }
 
-@font-face {
-  font-family: "AvenirBlack";
-  src: url("./fonts/avenir-black-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirMedium";
-  src: url("./fonts/avenir-medium-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirBook";
-  src: url("./fonts/avenir-book-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirHeavy";
-  src: url("./fonts/avenir-heavy-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "AvenirRoman";
-  src: url("./fonts/avenir-roman-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Conviction";
-  src: url("./fonts/Conviction.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Futura";
-  src: url("./fonts/futura/futur.ttf") format("truetype");
-}
-@font-face {
-  font-family: "EurostileBQ";
-  src: url("./fonts/EurostileBQ-BoldExtended.otf") format("opentype");
-}
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: "AvenirBlack", Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 .entry-content h1, h2, h3, h4, h5, h6 {
@@ -446,18 +404,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .entry-title, .entry-title > a {
-  font-family: "AvenirBlack", Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 900;
   font-size: 32px;
   font-size: 2rem;
   text-align: left;
-  color: #ff7254;
+  color: #FF7254;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
 section.widget:hover > h2.widget-title {
-  background: #ff7254;
+  background: #FF7254;
   color: white;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -472,8 +430,8 @@ h2.widget-title {
   font-size: 20px;
   text-align: left;
   color: #707070;
-  -webkit-box-shadow: 0 2px 0 0 #ff7254;
-  box-shadow: 0 2px 0 0 #ff7254;
+  -webkit-box-shadow: 0 2px 0 0 #FF7254;
+  box-shadow: 0 2px 0 0 #FF7254;
   margin-bottom: 1rem;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -482,7 +440,7 @@ h2.widget-title {
   transition: all 0.3s ease-in-out;
 }
 h2.widget-title:hover {
-  background: #ff7254;
+  background: #FF7254;
   color: white;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -535,7 +493,7 @@ address {
 }
 
 pre {
-  background: #eee;
+  background: #5E6A7E;
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
   font-size: 0.9375rem;
@@ -568,7 +526,7 @@ big {
 
 a.more-link {
   border-radius: 25px;
-  background: #ff7254;
+  background: #FF7254;
   box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.25);
   font-weight: 900;
   font-size: 1.2rem;
@@ -604,7 +562,7 @@ body {
 }
 
 hr {
-  background-color: #ccc;
+  background-color: #5E6A7E;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em;
@@ -729,7 +687,7 @@ input[type=submit] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
-  background: #e6e6e6;
+  background: #5E6A7E;
   color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
   font-size: 0.75rem;
@@ -768,7 +726,7 @@ input[type=datetime],
 input[type=datetime-local],
 input[type=color],
 textarea {
-  color: #666;
+  color: #434F63;
   border: 1px solid #ccc;
   border-radius: 50px;
   padding: 3px;
@@ -818,7 +776,7 @@ a {
   color: royalblue;
 }
 a:visited {
-  color: #ff7254;
+  color: #FF7254;
 }
 a:hover, a:focus, a:active {
   color: midnightblue;
@@ -904,7 +862,7 @@ a:hover, a:active {
   background: white;
   width: fit-content;
   padding: 5px 12px;
-  border: 1px solid #fc7153;
+  border: 1px solid #FF7254;
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
@@ -929,15 +887,15 @@ a:hover, a:active {
 
 a.navbar-item {
   font-weight: 900;
-  font-family: "AvenirBlack", Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   text-align: left;
   color: #293241;
 }
 a.navbar-item.active {
-  -webkit-box-shadow: inset 0 -6px 0px 0px #FF7254;
-  box-shadow: inset 0 -6px 0px 0px #FF7254;
+  -webkit-box-shadow: inset 0px 6px 0px 0px #FF7254;
+  box-shadow: inset 0px 6px 0px 0px #FF7254;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -952,8 +910,8 @@ a.navbar-item.active:hover {
   transition: all 0.3s ease-in-out;
 }
 a.navbar-item:hover {
-  -webkit-box-shadow: inset 0 -6px 0px 0px #FF7254;
-  box-shadow: inset 0 -6px 0px 0px #FF7254;
+  -webkit-box-shadow: inset 0px 6px 0px 0px #FF7254;
+  box-shadow: inset 0px 6px 0px 0px #FF7254;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -970,11 +928,10 @@ a.navbar-item:hover:hover {
 
 a.navbar-link {
   font-weight: 900;
-  font-family: "AvenirBlack", Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   text-align: left;
-  color: #293241;
 }
 a.navbar-link.active {
   -webkit-box-shadow: inset 0 -6px 0px 0px #FF7254;
@@ -1008,7 +965,7 @@ p.site-description {
   /* Many screen reader and browser combinations announce broken words as they would appear visually. */
 }
 .screen-reader-text:focus {
-  background-color: #f1f1f1;
+  background-color: #fafafa;
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
@@ -1155,7 +1112,7 @@ footer#colophon a:hover {
   -webkit-box-shadow: 0 0 2px 2px #F2F2F2;
   box-shadow: 0 0 2px 2px #F2F2F2;
   margin: 5% 0% 0%;
-  color: #ff7254;
+  color: #FF7254;
   z-index: 9;
   padding: 0px;
 }
@@ -1416,7 +1373,7 @@ footer.entry-footer.sticky {
 }
 
 .cat-links, .cat-links > a {
-  color: #ff7254;
+  color: #FF7254;
 }
 
 .image-class {
