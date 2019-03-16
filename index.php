@@ -40,42 +40,11 @@ get_header();
             ?>
         </div>
     </div>
-    <div class=" index-menu-icons" id="index-menu-icons">
-        <div class="columns is-mobile is-multiline  is-paddingless is-marginless">
-            <div class="column has-text-centered" id="laravel">
-                <a href="<?php get_site_url()?>?s=laravel">
-                <p class="marginless"> <i class="fab fa-laravel fa-2x"></i></p>
-                <p class="marginless brand-name">Laravel</p>
-                </a>
-            </div>
-            <div class="column has-text-centered" id="vuejs">
-                <a href="<?php get_site_url()?>?s=vuejs">
-                <p class="marginless"> <i class="fab fa-vuejs fa-2x"></i></p>
-                <p class="marginless brand-name">VueJS</p>
-                </a>
-            </div>
-            <div class="column has-text-centered" id="wp">
-                <a href="<?php get_site_url()?>?s=wordpress">
-                <p class="marginless"><i class="fab fa-wordpress fa-2x"></i></p>
-                <p class="marginless brand-name"> Wordpress</p>
-                </a>
-            </div>
-            <div class="column has-text-centered" id="code">
-                <a href="<?php get_site_url()?>?s=code">
-                <p class="marginless"><i class="fas fa-code fa-2x"></i></p>
-                <p class="marginless brand-name"> Code</p>
-                </a>
-            </div>
-            <div class="column has-text-centered" id="art">
-                <a href="<?php get_site_url()?>?s=design">
-                <p class="marginless"> <i class="fas fa-palette fa-2x"></i> </p>
-                <p class="marginless brand-name">Design</p>
-                </a>
-            </div>
-        </div>
-    </div>
-
-
+    <h1 style="    margin: 3rem;">
+    <span class="header_span">
+        Derniers articles :
+    </span>
+    </h1>
     <div class="columns">
         <div class="column is-8 is-offset-2">
             <?php
@@ -90,10 +59,8 @@ get_header();
                 get_template_part('template-parts/content', 'none');
             endif;
             ?>
-
         </div>
     </div>
-
 
 <?php
 get_footer();

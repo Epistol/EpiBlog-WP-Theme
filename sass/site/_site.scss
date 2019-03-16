@@ -12,12 +12,18 @@
 --------------------------------------------------------------*/
 @import "primary/comments";
 
+div#content.site-content {
+  margin-top: 4%;
+}
+
 .rezos {
   //position: absolute;
   //left: 8rem;
   //width: 3pc;
   //margin-top: 15%;
-  display:flex;justify-content:center;align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon {
@@ -28,22 +34,22 @@
   width: 2rem;
 
   &.fb {
-	background: #3b5999;
+    background: #3b5999;
     margin-left: 1rem;
 
   }
-  
+
   &.twitter {
     margin-left: 1rem;
     background: #55acee;
   }
-  
+
   &.linkedin {
-	background: #0077B5;
+    background: #0077B5;
   }
-  
+
   &.slack {
-	background: #3aaf85;
+    background: #3aaf85;
   }
 }
 
@@ -86,7 +92,7 @@ a {
 
 .site-info {
   & a {
-    color:white;
+    color: white;
   }
 }
 
@@ -98,17 +104,22 @@ a {
   position: fixed;
   //top: 5rem;
   width: 100%;
-  margin: 0px!important;
+  margin: 0px !important;
   max-width: none;
   left: 0;
   top: 84px;
-  @media screen and (max-width:425px) {
-    position : relative;
+
+  @media screen and (max-width: 425px) {
+    position: relative;
   }
 
   & a {
-    display:flex;justify-content:center;align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4b525e;
   }
+
   & .brand-name {
     padding-left: 1rem;
   }
@@ -117,11 +128,36 @@ a {
 
 .is-fixed {
   position: fixed;
-  top:0;
+  top: 0;
 }
 
 .wp-block-embed {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.header_span {
+  width: fit-content;
+  border-bottom: 4px solid #fc7254;
+}
+
+.menu2 {
+  padding-top: 0.3rem !important;
+  padding-bottom: 0.15rem !important;
+}
+
+embed, iframe, object {
+  max-width: 100%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul.footer-links {
+  list-style: none;
+  margin: 0;
+  & li {
+
+  }
 }

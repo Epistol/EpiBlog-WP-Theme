@@ -26,16 +26,10 @@
         stuckClass: 'is-fixed-top '
     });
 
-    var stickySecondNav = new Waypoint.Sticky({
-        element: document.getElementById('index-menu-icons'),
-        stuckClass: 'is-fixed-top shadowNav secondMenu',
-    });
-
     var stickySideBar = new Waypoint.Sticky({
         element: $('aside.widget-area')[0],
         stuckClass: 'is-fixed sideMove',
         offset: '-75%'
     });
-
 
 })(jQuery);

@@ -2,14 +2,16 @@
   background: #fff;
   -webkit-box-shadow: 0 0 2px 2px #F2F2F2;
   box-shadow: 0 0 2px 2px #F2F2F2;
-  margin: 5% 0%;
+  margin: 5% 0% 0%;
   color: $main_color;
   z-index: 9;
-  padding:0px;
+  padding: 0px;
 }
 
 .flex-center {
-  display:flex;justify-content:center;align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .marginless {
@@ -23,62 +25,86 @@
 .column {
   &#laravel {
     @include small-transition;
+    $color: #f55247!important;
+
     &:hover {
-      background:#f55247;
+      background: #f55247;
+
       & a {
-        color:white!important;
+        color: white !important;
       }
+
       & .brand-name {
         font-weight: bold;
       }
     }
   }
+
   &#vuejs {
     @include small-transition;
+    color: #42b883!important;
+
     &:hover {
-      background:#42b883;
+      background: #42b883;
+
       & a {
-        color:#35495e!important;
+        color: #35495e !important;
       }
+
       & .brand-name {
         font-weight: bold;
       }
     }
   }
+
   &#wp {
     @include small-transition;
 
+    color: #21759b!important;
+
     &:hover {
-      background:#21759b;
+      background: #21759b;
+
       & a {
-        color:#d54e21!important;
+        color: #d54e21 !important;
       }
+
       & .brand-name {
         font-weight: bold;
       }
     }
   }
+
   &#code {
     @include small-transition;
 
+    color: #333!important;
+
     &:hover {
-      background:#333;
+      background: #333!important;
+
       & a {
-        color:#6cc644!important;
+        color: #6cc644 !important;
       }
+
       & .brand-name {
         font-weight: bold;
       }
     }
   }
+
   &#art {
     @include small-transition;
 
+    color: #ea4c89!important;
+
     &:hover {
-      background:#444444;
+      background: #444444;
+
       & a {
-        color:#ea4c89!important;
+        color: #ea4c89 !important;
       }
+
       & .brand-name {
         font-weight: bold;
       }

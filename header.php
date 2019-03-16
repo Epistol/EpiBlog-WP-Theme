@@ -8,7 +8,6 @@
  *
  * @package Epistol_Blog
  */
-
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?> class="">
@@ -28,9 +27,11 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
     <script>
         window.dataLayer = window.dataLayer || [];
+
         function gtag() {
             dataLayer.push(arguments);
         }
+
         gtag('js', new Date());
         gtag('config', 'UA-39203770-7');
     </script>
@@ -41,15 +42,12 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-    <div class="columns">
+    <div class="columns is-multiline">
         <div class="column is-8 is-offset-2">
             <!--	<a class="skip-link screen-reader-text" href="#content">-->
             <?php //esc_html_e( 'Skip to content', 'epiblog' ); ?><!--</a>-->
             <header id="masthead" class="site-header">
                 <nav class="navbar" role="navigation" aria-label="main navigation">
-
-                    <div class="container">
-
                         <div class="navbar-brand">
                             <?php
                             the_custom_logo();
@@ -86,8 +84,10 @@
                                 <div class="navbar-item">
                                     <form role="search" method="get" id="searchform" action="<?= get_site_url() ?>">
                                         <div class="field">
-                                            <p class="control has-icons-left" style="margin-bottom: 0px; line-height: 2.3rem;">
-                                                <input type="text" class="input" value="" placeholder="Recherche" name="s"
+                                            <p class="control has-icons-left"
+                                               style="margin-bottom: 0px; line-height: 2.3rem;">
+                                                <input type="text" class="input" value="" placeholder="Recherche"
+                                                       name="s"
                                                        id="s"/>
                                                 <span class="icon is-small is-left">
                                                      <i class="fas fa-search"></i>
@@ -99,12 +99,19 @@
                                 <div class="navbar-item  jetpack_widget_social_icons">
                                     <?php include('sociaux.php'); ?>
                                     <span style="width:1rem"></span>
-                                    <a href="https://www.patreon.com/bePatron?u=3347388" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+                                    <a href="https://www.patreon.com/bePatron?u=3347388"
+                                       data-patreon-widget-type="become-patron-button">Follow on Patron!</a>
+                                    <script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
                                 </div>
                             </div>
 
+                        </div>
                 </nav><!-- #site-navigation -->
             </header><!-- #masthead -->
+        </div>
+        <div class="column is-12">
+            <?php get_template_part('template-parts/header_second'); ?>
+
         </div>
     </div>
     <div id="content" class="site-content">

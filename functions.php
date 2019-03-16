@@ -178,13 +178,26 @@ body.admin-bar #footer {padding-bottom: 28px;}
 
 add_action('wp_head', 'move_admin_bar');
 
+function get_scss_stylesheet_uri() {
+    $stylesheet_dir_uri = get_stylesheet_directory_uri();
+    $stylesheet_uri = $stylesheet_dir_uri . '/sass/style.css';
+    /**
+     * Filters the URI of the current theme stylesheet.
+     *
+     * @since 1.5.0
+     *
+     * @param string $stylesheet_uri     Stylesheet URI for the current theme/child theme.
+     * @param string $stylesheet_dir_uri Stylesheet directory URI for the current theme/child theme.
+     */
+    return apply_filters( 'stylesheet_uri', $stylesheet_uri, $stylesheet_dir_uri );
+}
 
 /**
  * Enqueue scripts and styles.
  */
 function epiblog_scripts()
 {
-    wp_enqueue_style('epiblog-style', get_stylesheet_uri());
+    wp_enqueue_style('epiblog-style', get_scss_stylesheet_uri());
 
     wp_enqueue_script('epiblog-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true);
     wp_enqueue_script('epiblog-footer', get_template_directory_uri() . '/js/footer-scripts.js', array(), '', true);

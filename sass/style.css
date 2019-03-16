@@ -438,7 +438,11 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both;
   font-family: "AvenirBlack", Arial, Helvetica, sans-serif;
-  margin-bottom: 1rem;
+}
+
+.entry-content h1, h2, h3, h4, h5, h6 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .entry-title, .entry-title > a {
@@ -766,7 +770,7 @@ input[type=color],
 textarea {
   color: #666;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 50px;
   padding: 3px;
 }
 input[type=text]:focus,
@@ -920,6 +924,7 @@ a:hover, a:active {
 
 .navbar-brand {
   margin-right: 5%;
+  margin-left: 15%;
 }
 
 a.navbar-item {
@@ -933,6 +938,34 @@ a.navbar-item {
 a.navbar-item.active {
   -webkit-box-shadow: inset 0 -6px 0px 0px #FF7254;
   box-shadow: inset 0 -6px 0px 0px #FF7254;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+a.navbar-item.active:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+a.navbar-item:hover {
+  -webkit-box-shadow: inset 0 -6px 0px 0px #FF7254;
+  box-shadow: inset 0 -6px 0px 0px #FF7254;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+a.navbar-item:hover:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 a.navbar-link {
@@ -1121,7 +1154,7 @@ footer#colophon a:hover {
   background: #fff;
   -webkit-box-shadow: 0 0 2px 2px #F2F2F2;
   box-shadow: 0 0 2px 2px #F2F2F2;
-  margin: 5% 0%;
+  margin: 5% 0% 0%;
   color: #ff7254;
   z-index: 9;
   padding: 0px;
@@ -1170,6 +1203,7 @@ footer#colophon a:hover {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  color: #42b883 !important;
 }
 .column#vuejs:hover {
   -webkit-transition: all 0.3s ease-in-out;
@@ -1193,6 +1227,7 @@ footer#colophon a:hover {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  color: #21759b !important;
 }
 .column#wp:hover {
   -webkit-transition: all 0.3s ease-in-out;
@@ -1216,6 +1251,7 @@ footer#colophon a:hover {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  color: #333 !important;
 }
 .column#code:hover {
   -webkit-transition: all 0.3s ease-in-out;
@@ -1225,7 +1261,7 @@ footer#colophon a:hover {
   transition: all 0.3s ease-in-out;
 }
 .column#code:hover {
-  background: #333;
+  background: #333 !important;
 }
 .column#code:hover a {
   color: #6cc644 !important;
@@ -1239,6 +1275,7 @@ footer#colophon a:hover {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  color: #ea4c89 !important;
 }
 .column#art:hover {
   -webkit-transition: all 0.3s ease-in-out;
@@ -1268,7 +1305,7 @@ footer#colophon a:hover {
 .post.sticky,
 .page.sticky {
   margin-bottom: 0px !important;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .updated:not(.published) {
@@ -1313,7 +1350,7 @@ footer#colophon a:hover {
 
 .reste-article {
   border-style: solid;
-  border-width: 0px 4px 4px 4px;
+  border-width: 0px 2px 2px 2px;
   border-color: #e8e6e6;
   -webkit-border-radius: 0 0 0 25px;
   border-radius: 0 0 0 25px;
@@ -1340,7 +1377,7 @@ footer#colophon a:hover {
 .content_article.sticky {
   background: white;
   border-radius: 50px;
-  border: 3px solid #e8e6e6;
+  border: 2px solid #e8e6e6;
 }
 @media screen and (max-width: 425px) {
   .content_article.sticky {
@@ -1451,6 +1488,10 @@ span.comments-link:before {
   color: #ff7254;
 }
 
+div#content.site-content {
+  margin-top: 4%;
+}
+
 .rezos {
   display: flex;
   justify-content: center;
@@ -1538,6 +1579,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #4b525e;
 }
 .secondMenu .brand-name {
   padding-left: 1rem;
@@ -1554,6 +1596,27 @@ a {
   align-items: center;
 }
 
+.header_span {
+  width: fit-content;
+  border-bottom: 4px solid #fc7254;
+}
+
+.menu2 {
+  padding-top: 0.3rem !important;
+  padding-bottom: 0.15rem !important;
+}
+
+embed, iframe, object {
+  max-width: 100%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul.footer-links {
+  list-style: none;
+  margin: 0;
+}
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/

@@ -1,44 +1,51 @@
 h1, h2, h3, h4, h5, h6 {
-	clear: both;
-	font-family: $typoheader;
-	margin-bottom: 1rem;
+  clear: both;
+  font-family: $typoheader;
+}
+
+.entry-content h1, h2, h3, h4, h5, h6 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .entry-title, .entry-title > a {
-	font-family: $typoheader;
-	font-weight: 900;
-	@include font-size(2);
-	text-align: left;
-	color: #ff7254;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
+  font-family: $typoheader;
+  font-weight: 900;
+  @include font-size(2);
+  text-align: left;
+  color: #ff7254;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
+
 section.widget:hover > h2.widget-title {
-  background : #ff7254;
-  color:white;
+  background: #ff7254;
+  color: white;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 h2.widget-title {
-	font-weight: 900;
-	display: table;
-	font-size: 20px;
-	text-align: left;
-	color: #707070;
-	-webkit-box-shadow: 0 2px 0 0 #ff7254;
-	box-shadow: 0 2px 0 0 #ff7254;
-	margin-bottom: 1rem;
+  font-weight: 900;
+  display: table;
+  font-size: 20px;
+  text-align: left;
+  color: #707070;
+  -webkit-box-shadow: 0 2px 0 0 #ff7254;
+  box-shadow: 0 2px 0 0 #ff7254;
+  margin-bottom: 1rem;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+
   &:hover {
-    background : #ff7254;
-    color:white;
+    background: #ff7254;
+    color: white;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
