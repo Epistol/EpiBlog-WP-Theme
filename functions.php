@@ -95,7 +95,13 @@ class Nav_Footer_Walker extends Walker_Nav_Menu
 
     public function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0)
     {
-        $is_current_item = array_search('current-menu-item', $item->classes) != 0 ? ' active' : '';
+        if(is_array($item->classes)){
+            $is_current_item = array_search('current-menu-item', $item->classes) != 0 ? ' active' : '';
+        }
+        else {
+            $is_current_item = '';
+        }
+
         $liClasses = 'navbar-item ' . $is_current_item;
         $hasChildren = $args->walker->has_children;
         $liClasses .= $hasChildren ? " has-dropdown is-hoverable" : "";
