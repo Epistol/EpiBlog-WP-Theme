@@ -70,13 +70,14 @@ header.entry-header {
   overflow-wrap: break-word;
 
   &.sticky {
-    padding: 0rem 4.5rem;
     border: 0px solid;
+    @media screen and (max-width: 425px) {
+    }
   }
 
   @media screen and (max-width: 425px) {
     margin-left: 0px;
-    padding: 0.5rem;
+    border-radius: 0px;
   }
 }
 

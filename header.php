@@ -42,7 +42,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-    <div class="columns is-multiline">
+    <div class="columns is-multiline is-marginless is-paddingless">
         <div class="column is-8 is-offset-2">
             <!--	<a class="skip-link screen-reader-text" href="#content">-->
             <?php //esc_html_e( 'Skip to content', 'epiblog' ); ?><!--</a>-->
@@ -109,7 +109,7 @@
                 </nav><!-- #site-navigation -->
             </header><!-- #masthead -->
         </div>
-        <div class="column is-12">
+        <div class="column is-12 is-paddingless">
             <?php get_template_part('template-parts/header_second'); ?>
 
         </div>

@@ -8,7 +8,7 @@
  */
 
 ?>
-<div class="rezos">
+<div class="column rezos is-paddingless ">
 	<?php // the_ID(); ?>
     <a href="https://www.facebook.com/sharer/sharer.php?u=<?= the_title(); ?>  <?= esc_url(get_permalink()); ?>
 <?php

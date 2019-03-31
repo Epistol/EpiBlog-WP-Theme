@@ -16,8 +16,8 @@ get_header();
 ?>
     <div class="container">
 
-    <div class="columns">
-        <div class="column is-8 is-offset-2">
+    <div class="columns is-multiline is-marginless is-paddingless">
+        <div class="column is-8 is-offset-2 ">
             <?php
             if (have_posts()) :
             if (is_home() && !is_front_page()) :
@@ -45,8 +45,8 @@ get_header();
         Derniers articles :
     </span>
     </h1>
-    <div class="columns">
-        <div class="column is-8 is-offset-2">
+    <div class="columns is-marginless is-paddingless">
+        <div class="column is-8 is-offset-2 ">
             <?php
             endif;
             get_template_part('template-parts/content', get_post_type());

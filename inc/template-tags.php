@@ -31,7 +31,7 @@ if(!function_exists('epiblog_posted_on')) :
 			'<a href="' . esc_url(get_permalink()) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
-		echo '<div class="posted-on"><span>Posté le ' . $posted_on . '</span></div>'; // WPCS: XSS OK.
+		echo '<div class="column posted-on is-paddingless"><span>Posté le ' . $posted_on . '</span></div>'; // WPCS: XSS OK.
 
 	}
 endif;
@@ -65,16 +65,21 @@ if(!function_exists('epiblog_entry_footer')) :
             /* translators: used between list items, there is a space after the comma */
 			$categories_list = get_the_category_list(esc_html__('> ', 'epiblog'));
 			if($categories_list) {
-                echo('<div class="column is-flexed-left">');
+                echo('<div class="column is-paddingless is-marginless">
+<div class="columns is-flexed-left is-paddingless is-marginless">');
                 /* translators: 1: list of categories. */
-				printf('<div class="cat-footer-links">' . esc_html__('%1$s', 'epiblog') . '</div>', $categories_list); // WPCS: XSS OK.
+				printf('<div class="column "><div class="columns is-multiline is-paddingless is-marginless"> 
+                            <div class="column cat-footer-links">' .
+                    esc_html__('%1$s', 'epiblog')
+                    . '</div><div class="column">'
+                    , $categories_list); // WPCS: XSS OK.
                 epiblog_posted_on();
+                printf('</div></div></div> ');
                 get_template_part('template-parts/social', get_post_type());
 
-                printf('</div>');
 
             }
-            printf('</div">');
+            printf('</div></div>');
         }
 
 

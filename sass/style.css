@@ -386,7 +386,7 @@ input,
 select,
 optgroup,
 textarea {
-  color: #293241;
+  color: #1B273B;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -776,7 +776,7 @@ a {
   color: royalblue;
 }
 a:visited {
-  color: #FF7254;
+  color: #EB4E2D;
 }
 a:hover, a:focus, a:active {
   color: midnightblue;
@@ -891,16 +891,17 @@ a.navbar-item {
   font-size: 16px;
   font-size: 1rem;
   text-align: left;
-  color: #293241;
+  color: #1B273B;
 }
 a.navbar-item.active {
-  -webkit-box-shadow: inset 0px 6px 0px 0px #FF7254;
-  box-shadow: inset 0px 6px 0px 0px #FF7254;
+  /*-webkit-box-shadow: inset 0px 6px 0px 0px $main_color;
+  box-shadow: inset 0px 6px 0px 0px $main_color;*/
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  color: #FF7254;
 }
 a.navbar-item.active:hover {
   -webkit-transition: all 0.3s ease-in-out;
@@ -936,6 +937,9 @@ a.navbar-link {
 a.navbar-link.active {
   -webkit-box-shadow: inset 0 -6px 0px 0px #FF7254;
   box-shadow: inset 0 -6px 0px 0px #FF7254;
+}
+a.navbar-link:visited {
+  color: #0E192D !important;
 }
 
 .widget {
@@ -1317,13 +1321,12 @@ footer#colophon a:hover {
   overflow-wrap: break-word;
 }
 .reste-article.sticky {
-  padding: 0rem 4.5rem;
   border: 0px solid;
 }
 @media screen and (max-width: 425px) {
   .reste-article {
     margin-left: 0px;
-    padding: 0.5rem;
+    border-radius: 0px;
   }
 }
 
@@ -1530,6 +1533,7 @@ a {
 @media screen and (max-width: 425px) {
   .secondMenu {
     position: relative;
+    top: 0px;
   }
 }
 .secondMenu a {

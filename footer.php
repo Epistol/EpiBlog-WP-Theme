@@ -33,7 +33,7 @@
                         projets, sites et services.
                     </p>
                     <p>
-                        En savoir <a href="/about"> plus sur moi ici</a>.
+                        En savoir <a href="/about"> plus ici</a>.
                     </p>
                     <p>
                         Si vous avez besoin d'aide en développement Web (en particulier Laravel), vous pouvez <a href="/contact">me contacter sur ce formulaire</a>.</p>

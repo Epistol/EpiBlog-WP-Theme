@@ -132,9 +132,10 @@ a.navbar-item {
   color: $grey400;
 
   &.active {
-    -webkit-box-shadow: inset 0px 6px 0px 0px $main_color;
-    box-shadow: inset 0px 6px 0px 0px $main_color;
+    /*-webkit-box-shadow: inset 0px 6px 0px 0px $main_color;
+    box-shadow: inset 0px 6px 0px 0px $main_color;*/
     @include small-transition;
+    color:$main_color;
   }
 
   &:hover {
@@ -154,6 +155,9 @@ a.navbar-link {
   &.active {
     -webkit-box-shadow: inset 0 -6px 0px 0px $main_color;
     box-shadow: inset 0 -6px 0px 0px $main_color;
+  }
+  &:visited {
+    color: $grey500!important;
   }
 }
 

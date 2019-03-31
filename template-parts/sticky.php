@@ -48,7 +48,7 @@
             </div><!-- .entry-content -->
         </div>
         <footer class="entry-footer sticky">
-            <div class="columns">
+            <div class="columns is-paddingless is-marginless">
 
             <?php
 //            var_dump(get_post_type());
