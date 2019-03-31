@@ -100,19 +100,23 @@ a {
   display: none;
 }
 
+#index-menu-icons {
+  background: #fff;
+  -webkit-box-shadow: 0 0 2px 2px #F2F2F2;
+  box-shadow: 0 0 2px 2px #F2F2F2;
+  color: $main_color;
+}
+#header_holder{
+  padding-top:2rem;
+}
 .secondMenu {
-  position: fixed;
-  //top: 5rem;
   width: 100%;
-  margin: 0px !important;
   max-width: none;
   left: 0;
-  top: 84px;
 
   @media screen and (max-width: 425px) {
     position: relative;
     top: 0px;
-
   }
 
   & a {
@@ -159,6 +163,7 @@ embed, iframe, object {
 ul.footer-links {
   list-style: none;
   margin: 0;
+
   & li {
 
   }

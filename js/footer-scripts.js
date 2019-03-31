@@ -18,7 +18,6 @@
     }, function() {
         $( '.navbar-dropdown' ).fadeOut( "slow" );
     });
-    
 
     var stickySideBar = new Waypoint.Sticky({
         element: $('aside.widget-area')[0],

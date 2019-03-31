@@ -1111,16 +1111,6 @@ footer#colophon a:hover {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
-#index-menu-icons {
-  background: #fff;
-  -webkit-box-shadow: 0 0 2px 2px #F2F2F2;
-  box-shadow: 0 0 2px 2px #F2F2F2;
-  margin: 5% 0% 0%;
-  color: #FF7254;
-  z-index: 9;
-  padding: 0px;
-}
-
 .flex-center {
   display: flex;
   justify-content: center;
@@ -1522,13 +1512,21 @@ a {
   display: none;
 }
 
+#index-menu-icons {
+  background: #fff;
+  -webkit-box-shadow: 0 0 2px 2px #F2F2F2;
+  box-shadow: 0 0 2px 2px #F2F2F2;
+  color: #FF7254;
+}
+
+#header_holder {
+  padding-top: 2rem;
+}
+
 .secondMenu {
-  position: fixed;
   width: 100%;
-  margin: 0px !important;
   max-width: none;
   left: 0;
-  top: 84px;
 }
 @media screen and (max-width: 425px) {
   .secondMenu {

@@ -43,7 +43,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
     <div class="columns is-multiline is-marginless is-paddingless">
-        <div class="column is-8 is-offset-2">
+        <div class="column is-12" id="header_holder">
             <!--	<a class="skip-link screen-reader-text" href="#content">-->
             <?php //esc_html_e( 'Skip to content', 'epiblog' ); ?><!--</a>-->
             <header id="masthead" class="site-header">
