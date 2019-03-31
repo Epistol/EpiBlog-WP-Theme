@@ -1,4 +1,4 @@
-<div class="secondMenu  index-menu-icons" id="index-menu-icons">
+<div class="secondMenu index-menu-icons" id="index-menu-icons">
     <div class="columns is-mobile is-multiline  is-paddingless is-marginless">
         <div class="column is-paddingless has-text-centered menu2" id="laravel">
             <a href="<?php get_site_url() ?>?s=laravel">
