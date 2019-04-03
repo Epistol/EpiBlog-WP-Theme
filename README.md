@@ -1,5 +1,6 @@
 # Epistol Blog Theme
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3e8c158dc6c04cdf9d3a0f5a735ecc2d)](https://app.codacy.com/app/Epistol/EpiBlog-WP-Theme?utm_source=github.com&utm_medium=referral&utm_content=Epistol/EpiBlog-WP-Theme&utm_campaign=Badge_Grade_Dashboard)
 [![buddy pipeline](https://app.buddy.works/mika63270/epiblog-wp-theme/pipelines/pipeline/173400/badge.svg?token=d02226089a67405b2a29f55e7e384aa69393f0f910a4d148a217b72c7272a564 "buddy pipeline")](https://app.buddy.works/mika63270/epiblog-wp-theme/pipelines/pipeline/173400) [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/Epistol/epistol) ![GitHub language count](https://img.shields.io/github/languages/count/Epistol/EpiBlog-WP-Theme.svg)
 
 - [Become a backer or sponsor on Patreon](https://www.patreon.com/epistol).
