@@ -119,9 +119,12 @@ class Nav_Footer_Walker extends Walker_Nav_Menu
 
     public function end_el(&$output, $item, $depth = 0, $args = array(), $id = 0)
     {
-        if (in_array("has_children", $item->classes)) {
-            $output .= "</div>";
+        if($item->classes !== ''){
+            if (in_array("has_children", $item->classes)) {
+                $output .= "</div>";
+            }
         }
+
         $output .= "</a>";
     }
 

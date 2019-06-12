@@ -1,6 +1,27 @@
 {
   "devDependencies": {
-    "stickybits": "^3.6.1"
+    "browser-sync": "^2.26.7",
+    "critical": "^1.3.4",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-include": "^2.4.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-livereload": "^4.0.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-stylus": "^2.7.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "gulp-zip": "^5.0.0",
+    "jshint": "^2.10.2",
+    "jshint-stylish": "^2.2.1",
+    "postcss-cssnext": "^3.1.0",
+    "stickybits": "^3.6.1",
+    "stylus": "^0.54.5"
   },
   "dependencies": {
     "waypoints": "^4.0.1"

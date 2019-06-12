@@ -40,7 +40,7 @@ get_header();
             ?>
         </div>
     </div>
-    <h1 style="    margin: 3rem;">
+    <h1 class="title">
     <span class="header_span">
         Derniers articles :
     </span>

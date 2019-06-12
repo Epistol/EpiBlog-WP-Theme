@@ -28,6 +28,14 @@ Theme du blog d\'epistol
 2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
+### Or with WP-CLI 
+
+1. ```wp core download```
+2. Go to the page of installation (with valet : ```valet park``` then the name.test)
+3. Go trough the installation, don't forget to setup a sql db somewhere
+4. ``` cd wp-content && cd themes && git clone https://github.com/Epistol/EpiBlog-WP-Theme.git ```
+5. Activate the theme in your brand new install and that's it.
+
 ##  Frequently Asked Questions 
 
  **Does this theme support any plugins?** 
@@ -36,7 +44,10 @@ Epistol Blog includes support for Infinite Scroll in Jetpack.
 
 ## Changelog 
 
-= 1.0 - May 12 2015 =
+
+#### 1.1 - June 12, 2019
+* Theme Design upgrade and better doc
+#### 1.0 - May 12 2015
 * Initial release
 
 ## Credits
