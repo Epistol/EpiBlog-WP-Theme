@@ -373,9 +373,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 32px;
   font-size: 2rem;
   text-align: left;
-  color: #FF7254;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem; }
+  color: #FF7254; }
 
 section.widget:hover > h2.widget-title {
   background: #FF7254;
