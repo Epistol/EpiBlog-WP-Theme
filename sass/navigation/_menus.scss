@@ -121,15 +121,17 @@
 
 .navbar-brand {
   margin-right: 5%;
-  margin-left: 15%;
+  margin-left: 5%;
 }
+
 
 a.navbar-item {
   font-weight: 900;
   font-family: $typoheader;
   @include font-size(1);
   text-align: left;
-  color: $grey400;
+  color: $grey200;
+
 
   &.active {
     /*-webkit-box-shadow: inset 0px 6px 0px 0px $main_color;
@@ -157,11 +159,9 @@ a.navbar-link {
     box-shadow: inset 0 -6px 0px 0px $main_color;
   }
   &:visited {
-    color: $grey500!important;
+    color: $grey400!important;
   }
 }
-
-
 .widget {
   border-bottom: 1px solid #C8C8C8;
   padding-bottom: 1rem;

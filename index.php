@@ -46,19 +46,23 @@ get_header();
     </span>
     </h1>
     <div class="columns is-marginless is-paddingless">
-        <div class="column is-8 is-offset-2 ">
+        <div class="column is-9">
             <?php
             endif;
             get_template_part('template-parts/content', get_post_type());
             $count++;
             }
-
             endwhile;
             the_posts_navigation();
             else :
                 get_template_part('template-parts/content', 'none');
             endif;
             ?>
+        </div>
+        <div class="column is-3" id="sidebar">
+            <aside>
+
+            </aside>
         </div>
     </div>
 

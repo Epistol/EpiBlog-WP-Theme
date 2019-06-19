@@ -189,7 +189,7 @@ add_action('wp_head', 'move_admin_bar');
 
 function get_scss_stylesheet_uri() {
     $stylesheet_dir_uri = get_stylesheet_directory_uri();
-    $stylesheet_uri = $stylesheet_dir_uri . '/sass/style.css';
+    $stylesheet_uri = $stylesheet_dir_uri . '/style.min.css';
     /**
      * Filters the URI of the current theme stylesheet.
      *
