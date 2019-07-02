@@ -11,11 +11,9 @@
  *
  * @package Epistol_Blog
  */
-
 get_header();
 ?>
     <div class="container">
-
     <div class="columns is-multiline is-marginless is-paddingless">
         <div class="column is-8 is-offset-2 ">
             <?php
@@ -65,6 +63,5 @@ get_header();
             </aside>
         </div>
     </div>
-
 <?php
 get_footer();

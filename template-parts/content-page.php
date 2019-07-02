@@ -7,7 +7,6 @@
  * @package Epistol_Blog
  */
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php epiblog_post_thumbnail(); ?>
     <header class="entry-header">
@@ -22,7 +21,6 @@
 		) );
 		?>
 	</div><!-- .entry-content -->
-
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
 			<?php
