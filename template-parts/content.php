@@ -12,20 +12,18 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="header_article">
+        <?php epiblog_post_thumbnail();
+        ?>
         <header class="entry-header">
             <?php
-
-
             if (is_singular()) :
                 the_title('<h1 class="entry-title">', '</h1>');
             else :
                 the_title('<h2 class="entry-title"><a href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</a></h2>');
             endif;
-
             ?>
         </header><!-- .entry-header -->
-        <?php epiblog_post_thumbnail();
-        ?>
+
 
     </div>
     <div class="reste-article">
@@ -54,7 +52,7 @@
         </div><!-- .entry-content -->
     </div>
     <footer class="entry-footer">
-        <div class="columns is-marginless is-paddingless">
+        <div class="columns is-marginless is-paddingless is-multiline">
             <?php epiblog_entry_footer(); ?>
         </div>
     </footer><!-- .entry-footer -->
