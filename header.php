@@ -47,6 +47,7 @@
             rel="stylesheet"
             href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
     />
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </head>
 
 <body <?php body_class(); ?>>
