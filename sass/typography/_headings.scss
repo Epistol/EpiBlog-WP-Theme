@@ -1,6 +1,10 @@
 h1, h2, h3, h4, h5, h6 {
   clear: both;
   font-family: $typoheader;
+  font-weight: 600;
+}
+h2, h3, h4, h5, h6 {
+  margin-bottom: 1.5rem;
 }
 .entry-title, .entry-title > a {
   font-family: $typoheader;
@@ -14,6 +18,22 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.4rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 1rem;
 }
 
 section.widget:hover > h2.widget-title {
