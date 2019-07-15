@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $typoheader;
   font-weight: 600;
 }
-h2, h3, h4, h5, h6 {
+h3, h4, h5, h6 {
   margin-bottom: 1.5rem;
 }
 .entry-title, .entry-title > a {
@@ -13,8 +13,6 @@ h2, h3, h4, h5, h6 {
   text-align: left;
   color: $main_color;
   background: white;
-  border-left: 2px solid #e8e6e6;
-  border-right: 2px solid #e8e6e6;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
