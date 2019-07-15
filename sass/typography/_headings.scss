@@ -44,6 +44,11 @@ section.widget:hover > h2.widget-title {
   transition: all 0.3s ease-in-out;
 }
 
+header.entry-header {
+  border-left: 2px solid #e8e6e6;
+  border-right: 2px solid #e8e6e6;
+}
+
 h2.widget-title {
   font-weight: 900;
   display: table;

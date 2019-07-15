@@ -403,6 +403,10 @@ section.widget:hover > h2.widget-title {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
+header.entry-header {
+  border-left: 2px solid #e8e6e6;
+  border-right: 2px solid #e8e6e6; }
+
 h2.widget-title {
   font-weight: 900;
   display: table;
@@ -1475,3 +1479,7 @@ object {
 figure.image.is-logo {
   max-height: 15rem;
   max-width: 10rem; }
+
+.image-class {
+  border-left: 2px solid #e8e6e6;
+  border-right: 2px solid #e8e6e6; }
