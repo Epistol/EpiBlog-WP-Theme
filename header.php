@@ -37,7 +37,16 @@
     </script>
 
     <?php wp_head(); ?>
+    <!-- Include the library. -->
+    <script
+            src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+    ></script>
 
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
 </head>
 
 <body <?php body_class(); ?>>

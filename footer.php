@@ -85,6 +85,9 @@
 <script type='text/javascript'
         src='<?= get_template_directory_uri() ?>/js/waypoints/lib/shortcuts/sticky.min.js'></script>
 <?php wp_footer(); ?>
+<script>
+    GitHubCalendar(".calendar", "Epistol", { responsive: true });
+</script>
 
 </body>
 </html>
