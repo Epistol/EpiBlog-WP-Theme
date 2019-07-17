@@ -8,7 +8,6 @@
  *
  * @package Epistol_Blog
  */
-
 ?>
 
 </div><!-- #content -->
@@ -38,11 +37,8 @@
                     <p>
                         Si vous avez besoin d'aide en développement Web (en particulier Laravel), vous pouvez <a href="/contact">me contacter sur ce formulaire</a>.</p>
                 </div>
-
-
             </div>
             <div class="column is-2 is-offset-1">
-
                 <div class="navigation_footer">
                     <h5>Navigation</h5>
                     <ul class="footer-links">
@@ -50,10 +46,14 @@
                         <li><a href="/sitemap">Sitemap</a></li>
                         <li><a href="/contact">Contact</a></li>
                         <li><a href="/about">A propos</a></li>
+                        <li><a href="https://cuisinedegeek.com">Cuisine De Geek</a></li>
+                        <li>
+                            <a href="https://dev.to/_epistol_">
+                                <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Epistol's DEV Profile" height="30" width="30">
+                            </a>
+                        </li>
                     </ul>
                 </div>
-
-
             </div>
             <div class="column">
                 <i class="fas fa-rss"></i> Flux RSS
@@ -88,6 +88,6 @@
 <script>
     GitHubCalendar(".calendar", "Epistol", { responsive: true });
 </script>
-
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </body>
 </html>
